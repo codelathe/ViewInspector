@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 import Combine
 #if canImport(UIKit)
@@ -384,4 +387,6 @@ private extension UIViewController {
         return navChildren + tabChildren + presented + children
     }
 }
+#endif
+
 #endif

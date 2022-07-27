@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 #if canImport(AVKit)
 import AVKit
@@ -85,5 +88,7 @@ extension VideoPlayer: SingleViewProvider {
             path: "configuration|videoOverlay", value: self)
     }
 }
+
+#endif
 
 #endif

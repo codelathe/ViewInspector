@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 import UniformTypeIdentifiers.UTType
 
@@ -52,4 +55,6 @@ public extension InspectableView where View == ViewType.PasteButton {
             .attribute(label: "supportedContentTypes", value: content.view, type: [UTType].self)
     }
 }
+#endif
+
 #endif

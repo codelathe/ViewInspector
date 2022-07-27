@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -184,3 +187,5 @@ public extension InspectableView where View == ViewType.Toolbar.ItemGroup {
 
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension ToolbarItemPlacement: BinaryEquatable { }
+
+#endif

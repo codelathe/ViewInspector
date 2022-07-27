@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Alert
@@ -85,3 +88,5 @@ public extension InspectableView where View == ViewType.SafeAreaInset {
             path: "properties|edge", value: content.view, type: Edge.self)
     }
 }
+
+#endif

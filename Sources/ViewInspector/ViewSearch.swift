@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Search namespace and types
@@ -464,3 +467,5 @@ private extension ViewSearch.Traversal {
         }
     }
 }
+
+#endif

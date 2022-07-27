@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewPositioning
@@ -41,3 +44,5 @@ public extension InspectableView {
             type: Double.self, call: "zIndex")
     }
 }
+
+#endif

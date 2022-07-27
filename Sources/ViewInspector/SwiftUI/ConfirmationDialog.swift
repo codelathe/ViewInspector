@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Alert
@@ -114,3 +117,5 @@ private extension InspectableView where View == ViewType.ConfirmationDialog {
             label: "isPresented", value: content.view, type: Binding<Bool>.self)
     }
 }
+
+#endif

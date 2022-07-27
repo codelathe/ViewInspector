@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 #if canImport(AuthenticationServices)
 import AuthenticationServices
@@ -166,4 +169,6 @@ public extension ASAuthorizationAppleIDCredential {
         setValue(realUserStatus.rawValue, forKey: "realUserStatus")
     }
 }
+#endif
+
 #endif

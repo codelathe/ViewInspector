@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -88,4 +91,6 @@ internal extension Content {
         throw InspectionError.notSupported("Not supported on this platform")
     }
 }
+#endif
+
 #endif

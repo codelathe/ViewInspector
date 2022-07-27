@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewSizing
@@ -219,3 +222,5 @@ private extension RandomAccessCollection where Element: Equatable {
         return !contains(where: { $0 != first })
     }
 }
+
+#endif

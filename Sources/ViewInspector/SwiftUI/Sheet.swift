@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Sheet
@@ -105,3 +108,5 @@ public extension InspectableView where View == ViewType.Sheet {
         try dismiss()
     }
 }
+
+#endif

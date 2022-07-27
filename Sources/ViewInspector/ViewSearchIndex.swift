@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Index
@@ -391,3 +394,5 @@ private extension Int {
         return self == 0 ? nil : self
     }
 }
+
+#endif

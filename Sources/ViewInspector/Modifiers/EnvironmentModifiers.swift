@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Environment Modifiers
@@ -107,3 +110,5 @@ extension _EnvironmentKeyTransformModifier: EnvironmentModifier {
         return try Inspector.attribute(label: "transform", value: self)
     }
 }
+
+#endif

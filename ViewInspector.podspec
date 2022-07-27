@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Alexey Naumov" => "alexey@naumov.tech" }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.15'
   s.tvos.deployment_target = '13.0'
   #s.watchos.deployment_target = '7.0'
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/nalexn/ViewInspector.git", :tag => "#{s.version}" }
 
   s.source_files  = 'Sources/ViewInspector/**/*.swift'
+  s.weak_framework = 'SwiftUI'
 
   s.test_spec 'Tests' do |unit|
     unit.source_files = 'Tests/ViewInspectorTests/**/*.swift'

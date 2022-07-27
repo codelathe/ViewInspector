@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -192,3 +195,5 @@ extension _ShapeView: InspectableShape {
         return shape.path(in: rect)
     }
 }
+
+#endif

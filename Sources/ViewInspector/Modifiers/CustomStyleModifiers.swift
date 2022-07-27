@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Custom Style Modifiers
@@ -22,3 +25,5 @@ public extension InspectableView {
 private extension StringProtocol {
     var firstUppercased: String { prefix(1).uppercased() + dropFirst() }
 }
+
+#endif

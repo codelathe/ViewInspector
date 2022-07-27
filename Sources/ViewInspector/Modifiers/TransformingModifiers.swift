@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewTransforming
@@ -106,3 +109,5 @@ public extension InspectableView {
         return (ratio, mode)
     }
 }
+
+#endif

@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 import Combine
 import XCTest
@@ -163,3 +166,5 @@ private extension Inspectable {
         return expectation
     }
 }
+
+#endif

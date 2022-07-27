@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Accessibility
@@ -344,3 +347,5 @@ private extension InspectableView {
         return callback
     }
 }
+
+#endif

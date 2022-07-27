@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 #if canImport(CoreLocationUI)
 import CoreLocationUI.CLLocationButton
@@ -87,4 +90,6 @@ extension LocationButton.Title: BinaryEquatable {
         }
     }
 }
+#endif
+
 #endif
