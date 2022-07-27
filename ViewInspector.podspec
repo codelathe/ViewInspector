@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/nalexn/ViewInspector.git", :tag => "#{s.version}" }
 
   s.source_files  = 'Sources/ViewInspector/**/*.swift'
+  s.weak_framework = 'SwiftUI'
 
   s.test_spec 'Tests' do |unit|
     unit.source_files = 'Tests/ViewInspectorTests/**/*.swift'
