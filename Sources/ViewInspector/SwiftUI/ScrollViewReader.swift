@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -62,3 +65,5 @@ private extension ScrollViewProxy {
         self = unsafeBitCast(Allocator8(), to: ScrollViewProxy.self)
     }
 }
+
+#endif

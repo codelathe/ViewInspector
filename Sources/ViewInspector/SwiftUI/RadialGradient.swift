@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -53,3 +56,5 @@ public extension InspectableView where View == ViewType.RadialGradient {
             .attribute(label: "endRadius", value: content.view, type: CGFloat.self)
     }
 }
+
+#endif

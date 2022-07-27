@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
@@ -66,3 +69,5 @@ public extension InspectableView {
         return try Inspector.attribute(path: "modifier|style", value: modifier)
     }
 }
+
+#endif

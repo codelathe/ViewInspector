@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewColorTests
@@ -88,3 +91,5 @@ public extension InspectableView {
             type: PreviewLayout.self, call: "previewLayout")
     }
 }
+
+#endif

@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 import XCTest
 
@@ -387,3 +390,5 @@ private extension String {
         return isEmpty ? replacement : self
     }
 }
+
+#endif

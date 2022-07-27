@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewControlAttributesTests
@@ -28,3 +31,5 @@ public extension InspectableView {
     }
     #endif
 }
+
+#endif

@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 #if canImport(MapKit)
 import MapKit
 import SwiftUI
@@ -92,5 +95,7 @@ public extension MapPin {
             label: "tintColor", value: self, type: Color?.self)
     }
 }
+
+#endif
 
 #endif

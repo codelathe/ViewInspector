@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewGraphicalEffects
@@ -204,3 +207,5 @@ internal extension ModifierNameProvider {
         return true
     }
 }
+
+#endif

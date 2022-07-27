@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 #if canImport(MapKit)
 import MapKit
 import SwiftUI
@@ -128,5 +131,7 @@ extension _DefaultAnnotatedMapContent: IdentifiableItemsContainer {
         return items.lazy.map({ $0.id }).contains(item.id)
     }
 }
+
+#endif
 
 #endif

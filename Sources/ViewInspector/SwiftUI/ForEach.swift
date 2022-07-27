@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 import UniformTypeIdentifiers.UTType
 
@@ -101,3 +104,5 @@ extension ForEach: MultipleViewProvider {
         }
     }
 }
+
+#endif

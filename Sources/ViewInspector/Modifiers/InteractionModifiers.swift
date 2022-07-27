@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - InteractionEvents
@@ -132,3 +135,5 @@ public extension InspectableView {
     }
     #endif
 }
+
+#endif

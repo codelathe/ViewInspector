@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - EnvironmentObject injection
@@ -79,3 +82,5 @@ internal extension String {
         return String(self[start ..< end])
     }
 }
+
+#endif

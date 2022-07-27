@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Adjusting Text in a View
@@ -141,4 +144,6 @@ extension TextInputAutocapitalization {
         }
     }
 }
+#endif
+
 #endif

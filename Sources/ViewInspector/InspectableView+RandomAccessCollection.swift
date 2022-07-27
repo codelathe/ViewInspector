@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import Foundation
 import SwiftUI
 
@@ -84,3 +87,5 @@ extension InspectableView {
         return content.isAbsent
     }
 }
+
+#endif

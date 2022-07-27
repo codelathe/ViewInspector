@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - ViewGestures
@@ -59,3 +62,5 @@ public extension InspectableView {
         return .init(shape: casted, eoFill: eoFill)
     }
 }
+
+#endif

@@ -1,3 +1,6 @@
+
+#if arch(x86_64) || arch(arm64)
+
 import SwiftUI
 
 // MARK: - Animation
@@ -14,3 +17,5 @@ public extension InspectableView {
         callback(&transaction)
     }
 }
+
+#endif
